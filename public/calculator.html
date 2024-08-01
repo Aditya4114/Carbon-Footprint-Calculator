@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measure</title>
+    <link rel="stylesheet" href="./styles/calculator.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+</head>
+<body1>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ClimatePulse</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+	<div class="form-box" >
+		<div class="header-text" >
+			Carbon Foot Print Calculator
+		</div>
+        <div class="subHeaders"><span class="under"style='font-size:30px;'>&#128204;</span>
+            Basic Necessities 
+        </div>
+        <form id = "carbonFootprintForm">
+        Electricity
+        <sup class="tooltip" data-tooltip="In India, the average electricity consumption is around 900-1,200 kilowatt-hours per capita annually.">?</sup>
+        <input placeholder="Amount" class="amt" type="text" id = "electricity"  style="margin-left:33px;"><span>kWh</span><br>
+
+
+        Natural gas
+        <sup class="tooltip" data-tooltip="In India, the average natural gas consumption is around 250-300 litres annually.">?</sup>
+        <input placeholder="Amount" class="amt" type="text" id = "NaturalG">Litres<br>
+
+
+        Coal
+        <sup class="tooltip" data-tooltip="In India, the average coal consumption is about 300 kg annually.">?</sup>
+        <input placeholder="Amount" class="amt" type="text" id="coal" style="margin-left:76px;">kg<br>
+
+
+        Biomass
+        <sup class="tooltip" data-tooltip="Biomass usage refers to the consumption of organic materials like wood, crop residues, and animal waste for energy. In India, the average biomass consumption is about 150 million tons annually.">?</sup>
+        <input placeholder="Amount" class="amt" type="text" id = "biomass"style="margin-left:45px;">kg<br>
+
+
+        LPG
+        <sup class="tooltip" data-tooltip="In India, the average LPG consumption is approximately 140-150 kilograms per capita annually.">?</sup>
+        <input placeholder="Amount" class="amt" type="text" id="lpg"style="margin-left:86px;"> kg<br>
+
+
+        Heating Oil
+        <sup class="tooltip" data-tooltip="In India, average consumption is relatively low, at about 5 million tons annually, due to the use of alternative energy sources and the mild climate. Average :500-600 litres">?</sup>
+        <input placeholder="Amount" class="amt" type="text" id="heatingOil" style="margin-left:27px;">Litres<br><br><br>
+
+
+        <div class="subHeaders"><span style='font-size:30px;'>&#128663;</span>
+            
+
+            Transportation
+        </div>
+        Personal Car
+        <sup class="tooltip" data-tooltip="In India, the average personal car usage is for about 10000-150000 km">?</sup>
+         <input placeholder="Distance Travelled" class="amt" type="text" id="personalCar" style="margin-left:48px;"><span>km</span><br>
+
+
+        Personal Car
+        <input placeholder="Fuel consumed" class="amt" type="text" id="fuelConsumed" style="margin-left:63px;">Litres<br>
+
+
+        Public Transport
+        <sup class="tooltip" data-tooltip="Please put the value for the complete household">?</sup>
+        <input placeholder="How many times" class="amt" type="text" id="publicTransport"><br>
+
+
+        Air Travel<sup class="tooltip" data-tooltip="Average distance: 5,300 to 11,000 km or 5-10 times">?</sup>
+        <input placeholder="Distance Travelled" class="amt" type="text" id="airTravel" style="margin-left:80px;">km<br><br><br>
+        <div class="subHeaders"><span style='font-size:30px;'>&#129346;</span>
+            
+        Food & Diet
+        </div>
+        Meat
+        <sup class="tooltip" data-tooltip="In India Average meat consumption is about 6-10 kgs">?</sup>
+        <input placeholder="Consumed" class="amt" type="text" id = "meat"style="margin-left:85px;">kg<br>
+        Dairy
+        <sup class="tooltip" data-tooltip="In India Average dairy product consumption is around 80-100 kgs">?</sup>
+        <input placeholder="Consumed" class="amt" type="text" id = "dairy"style="margin-left:85px;">kg<br>
+
+
+        <!-- Plant-Based 
+        <sup class="tooltip" data-tooltip="Using plant waste for composting or energy reduces carbon footprint by recycling organic material, lowering greenhouse gas emissions, and decreasing landfill waste. This practice supports ecosystem health by enhancing soil quality and reducing waste.">?</sup>
+        <input placeholder="Consumed" class="amt" type="text" id="plantBased"style="margin-left:30px;">kg<br> -->
+
+
+        Food Waste
+        <sup class="tooltip" data-tooltip="In India Average waste generation is around 150-215 kgs">?</sup>
+        <input placeholder="Waste generated" class="amt" type="text" id = "foodWasted"style="margin-left:46px;">kg<br><br><br>
+
+
+        <div class="subHeaders"><span style="font-size:30px">&#128176;</span>
+            Goods & Services
+        </div>
+        Consumer goods
+        <sup class="tooltip" data-tooltip="In India Average consumer product consumption is around 100-150 kgs">?</sup>
+        <input placeholder="Amount" class="amt" id="consumerGoods"type="text">kg<br>
+
+
+        Packaging
+        <sup class="tooltip" data-tooltip="In India Average is close to 35-52 kgs">?</sup>
+         <input placeholder="Packaging materials" class="amt" type="text" id="packaging"style="margin-left:70px;">kg<br>
+
+
+        Water use
+        <sup class="tooltip" data-tooltip="In India Average water usage per household is around 100,000 to 150,000 liters">?</sup>
+        <input placeholder="Consumed" class="amt" type="text" id="waterUse"style="margin-left:77px;">Litres<br><br><br>
+
+
+        <div class="subHeaders"><span style='font-size:30px;'>&#127969;</span>
+            House & Infrastructure
+        </div>
+        Construction materials
+        <sup class="tooltip" data-tooltip=" construction materials include concrete, steel, and timber. Their usage impacts the environment through high energy consumption, emissions, resource depletion, and habitat disruption during extraction and production.">?</sup>
+        <input placeholder="Materials used (kg)" class="amt" type="text" id="constructionMaterials"style="margin-left:32px;"><br>
+
+
+        Maintenance & renovation 
+        <sup class="tooltip" data-tooltip="Maintenance and renovation of properties often involve materials like paint, insulation, and flooring, impacting the environment through increased waste, resource use, and emissions from production and disposal.">?</sup>
+        <input placeholder="Materials used(kg)" class="amt" type="text" id="maintenanceRenovation" style="margin-left:4px;"><br><br><br>
+
+
+        <div class="subHeaders"><span style='font-size:30px;'>&#127917;</span>
+            Other activities
+        </div>
+        Entertainment
+        <sup class="tooltip" data-tooltip="streaming, gaming, and large-scale events, increase carbon footprints through high energy consumption and data centers' emissions. They contribute to greater environmental impact due to resource-intensive infrastructure and transportation needs.">?</sup>
+        <input placeholder="Activities participated in" class="amt" id="entertainment"type="text" style="margin-left:89px;"><br>
+
+
+        Health & wellness
+         <sup class="tooltip" data-tooltip="gym workouts and wellness products, negatively impact the environment through energy consumption, transportation, and manufacturing emissions. Their environmental impact stems from resource use and waste generation.">?</sup>
+         <input placeholder="Products or services used" class="amt" type="text" id="healthWellness"style="margin-left:58px;">kg<br>
+
+
+         <div id="button-86" class="button-container">
+            <button class="button-86 calculate-btn" type="button" onclick="calculateTotalCarbonFootprint()">
+              <i class="fa fa-calculator"></i>Calculate
+            </button>
+            <button class="button-86 reload-btn">
+              <span class="reload-icon">&#x21bb;</span>
+              <span class="reload-text"><strong>Re-calculate</strong></span>
+            </button>
+          </div>
+</form>
+<p id="result"></p>
+
+        <!-- <section id="home">
+            <h2>Main Content</h2>
+            <p>This is the main content of the page. You can add more elements here.</p>
+            <button id="changeColorBtn">Change Background Color</button>
+        </section> -->
+
+        <details>
+            <summary>How it works<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><circle cx="128" cy="180" r="12"></circle><path d="M127.9995,144.0045v-8a28,28,0,1,0-28-28" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg></summary>
+            <div>
+                <ul>
+                    <li>All calculations on this website are based on proven metrics and specific values derived from average consumption data.</li>
+                    <li>By providing your usage within the specified ranges, we can accurately estimate your carbon footprint.</li>
+                    <li>The total carbon footprint displayed considers an average household size of 4-5 members and represents annual consumption.</li>
+                    <li>This approach ensures a comprehensive and realistic view of your household's environmental impact.</li>
+                    <li>The result will be shown in the form of kg CO2e, where 'e' stands for equivalent.</li>
+                    <li>The outcome should not be treated as a benchmark, as it depends on individual living habits and various external factors.</li>
+                    <li>It is advisable to enter values as suggested in the "?" for better accuracy. If you don't use something, you can skip that field.</li>
+                    <li>Make sure the details entered should be per household and not individually</li>
+                </ul>
+                </ul>
+                
+        </div>
+        </details>
+        
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ClimatePulse. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="./scripts/calculator.js"></script>
+    <!-- <script src="/src/js/script.js"></script> -->
+</body1>
+</html>

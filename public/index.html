@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimatePlus - Your Climate Impact Hub</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ClimatePulse</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="/assests/slider01.jpg" alt="Nature">
+            </div>
+            <div class="slide">
+                <img src="/assests/Slider2.jpg" alt="Climate">
+            </div>
+            <div class="slide">
+                <img src="/assests/slider4.jpg" alt="Sustainability">
+            </div>
+            <div class="slide">
+                <img src="/assests/slider3.jpg" alt="Sustainability">
+            </div>
+            <div class="slide">
+                <img src="/assests/slider5.jpg" alt="Sustainability">
+            </div>
+           
+        </div>
+        <div class="hero-content">
+            <h1>Measure Your Impact, Change the World</h1>
+            <p>Discover your ecological footprint and learn how to become a climate freak!</p>
+            <a href="calculator.html" class="cta-button">Calculate Your Footprint</a>
+        </div>
+        <button class="slider-button prev">&lt;</button>
+        <button class="slider-button next">&gt;</button>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2><marquee>Why Choose ClimatePulse?</marquee></h2>
+            <div class="feature-grid">
+                <div class="feature-item flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="feature-icon">🌍</div>
+                            <h3>Accurate Calculations</h3>
+                            <p>Our advanced algorithms provide precise ecological footprint measurements.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Learn more about our calculation methods and data sources.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="about.html" class="feature-item flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="feature-icon">🌱</div>
+                            <h3>Personalized Advice</h3>
+                            <p>Get tailored recommendations to reduce your environmental impact.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Discover how we create customized eco-friendly suggestions just for you.</p>
+                        </div>
+                    </div>
+                </a>
+        
+                <div class="feature-item flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="feature-icon">🤝</div>
+                            <h3>Community Support</h3>
+                            <p>Join a network of like-minded individuals committed to climate stewardship.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Connect with others and share your sustainability journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="globeContainer"></div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ClimatePulse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="carbon-counter">
+        Carbon Saved: <span id="carbon-value">0</span> kg
+    </div>
+
+    <script src="./scripts/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</body>
+</html>
