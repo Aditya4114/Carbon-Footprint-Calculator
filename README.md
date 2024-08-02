@@ -1,6 +1,4 @@
-
-
-# Carbon Footprint Calculator
+# ClimatePulse
 
 This project is a web-based carbon footprint calculator that helps users estimate their personal carbon emissions.
 
