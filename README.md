@@ -26,17 +26,23 @@ Users input their data into the calculator, which then processes this informatio
 
 ## Features
 
--> Precise calculations.
--> Customized results for when the footprint is above , within or below the threshold.
--> Looks upon variety of habits to calculate accurate results.
--> Make sure to read the (How it works?) in calculation page to know more.
+- Precise calculations.
+- Customized results for when the footprint is above , within or below the threshold.
+- Looks upon variety of habits to calculate accurate results.
+- Make sure to read the (How it works?) in calculation page to know more.
 
 ## Technologies Used
 
--> HTML
--> CSS
--> JS
+- HTML
+- CSS
+- JS
 
 ## Installation and Setup
 
 CLone the repository by using standard git clone commands.
+
+# Contributors
+
+- (https://github.com/Bipasha0) 
+
+
