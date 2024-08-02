@@ -1,4 +1,4 @@
-Here's a draft of a GitHub README file for your carbon footprint calculator:
+
 
 # Carbon Footprint Calculator
 
