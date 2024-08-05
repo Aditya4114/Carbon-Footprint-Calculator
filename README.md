@@ -43,6 +43,7 @@ CLone the repository by using standard git clone commands.
 
 # Contributors
 
-- (https://github.com/Bipasha0) 
+- https://github.com/Bipasha0
+- https://github.com/Koushiki14
 
 
